@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/externalCss/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container w-100 p-lg-5 p-3">
+    <!-- create post form  -->
+    <div class="signup-form  p-3 p-4 p-lg-5 rounded-4 col-md-3 col-12  postForm shadow-lg bg-warning">
+      <i class="ri-close-large-line position-absolute fw-bold fs-3 top-0 end-0 m-2 cursur claosePostForm"></i>
+      <h2 class="text-center">Create post</h2>
+      <form>
+        <div class="form-group my-2 my-lg-3 ">
+          <input type="text" class="form-control py-3" name="postTitle" placeholder="Enter Post title" required>
+        </div>
+          <div class="form-group my-2 my-lg-3 ">
+           <textarea class="form-control py-3" rows="5"  name="postDips" placeholder="Write sometihing..."></textarea>
+          </div>
+          <input type="file" class="form-control" name="imageForPost" id="">
+          <button type="submit" class="btn btn-primary w-100  btn-block px-4 py-3 my-3 mainBtn">Upload post</button>
+        </form>
+  </div>
+    <div  class="row d-flex justify-content-center w-100">
+      <div class="col-lg-6 col-12 d-flex  row justify-content-center">
+        <div class=" col-lg-6 col-6 profile-pic mt-0 border-0">
+          <!-- <input type="file" class=""> -->
+            <img class="bg-black userAvatar" src="" alt="">
+        </div>
+        <div class="ml-4 col-lg-7 col-6 ps-2">
+            <div class="username m-0">Username@123</div>
+            <div class="name m-0">Nmae of user</div>
+        <div class="col-lg-8 col-12"> <button style="font-size: 18px;" class="btn mainBtn text-white w-100 mt-2  py-1 px-lg-3 px-0 crearePost">Create post <i class="ri-add-circle-fill"></i></button></div>
+        </div>
+    </div>
+    </div>
+   <!-- posts  -->
+   <div class="row h-auto gap-5 py-5 postsRow">
+    
+      </div>
+    </div>
+   <div class="btn mainBtn d-lg-none d-block position-fixed bottom-0 end-0 m-2 ">
+   <a href="#" class="text-decoration-none"> <i class="ri-home-4-fill fs-1 text-white"></i></a>
+   </div>
+<script src="/js/home.js"></script>
+</body>
+</html>

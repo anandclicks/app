@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/externalCss/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="container signup-container ">
+    <div class="row">
+      <div class="signup-text col-md-6 col-12 d-flex flex-column justify-content-center">
+        <h1>Join Our Social Media <span class="mainBtn" style="-webkit-background-clip: text; color: transparent;">Community!</span></h1>
+        <p>Stay connected with friends and family, share your moments, and explore what's happening around the world.</p>
+    </div>
+    <div class="signup-form  p-3 pt-1 p-lg-5 pt-lg-5 rounded-4 col-md-6 col-12 ">
+        <h2 class="text-center">Sign Up</h2>
+        <form action="http://localhost:3000/registration"  method="post">
+          <div class="form-group my-2 my-lg-3 ">
+            <input type="text" class="form-control py-3" name="name" placeholder="Enter your full name  " required>
+          </div>
+            <div class="form-group my-2 my-lg-3 ">
+              <input type="text" class="form-control py-3" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group my-2 my-lg-3 ">
+              <input type="email" class="form-control py-3" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group my-2 my-lg-3 position-relative">
+              <input type="password" class="form-control py-3 " id="password" name="password" placeholder="Enter your password">
+            <span class="toggle-password eye pt-3" id="togglePassword"><i class="ri-eye-off-fill fs-5 m-3"></i></span>
+            </div>
+            <button type="submit" class="btn btn-primary w-100  btn-block px-4 py-3 my-3 mainBtn">Sign Up</button>
+            <a class="text-decoration-none text-black" href="/html/login.html">I already have account</a>
+        </form>
+    </div>
+    </div>
+</div>
+
+  <script src="/js/script.js"></script>
+</body>
+</html>

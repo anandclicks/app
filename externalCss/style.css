@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+}
+.mainBtn {
+  background: linear-gradient(to left, #001aff,#ff0000);
+  border: none !important;
+}
+.mainBtnBg {
+  background: linear-gradient(to left, #001aff,#ff0000);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.bgMain {
+  background: linear-gradient(to left, #001aff,#ff0000);
+}
+.form-control:focus {
+  border: 1px solid #000 !important;
+  box-shadow: none !important;
+  color: #000 !important;
+}
+.eye {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.signup-container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.signup-text {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+.signup-form {
+  flex: 1;
+  padding: 20px;
+  max-width: 50%;
+}
+@media (max-width: 768px) {
+  .signup-text, .signup-form {
+      max-width: 100%;
+  }
+}
+
+/* user home page css  */
+.profile-pic {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: auto;
+}
+
+.username {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.bio {
+  margin-top: 10px;
+}
+
+.stats {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.highlights {
+  margin-top: 20px;
+  display: flex;
+}
+
+.highlight {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.highlight img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  min-height: 260px !important;
+  /* width: 300px !important; */
+}
+.profileImg {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.cursur {
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .card {
+    min-height: 300px !important;
+  }
+}
+.likeBtn, .dislikeBtn {
+ transition: 0.2s ease-in-out;
+ transform: scale(1);
+}
+ .popup {
+  animation: popup 0.6s infinite;
+ }
+@keyframes popup {
+  0%{
+    transform: scale(1);
+  }
+ 
+  60%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+ 
+}
+.cardImge {
+  height: 400px;
+  position: absolute;
+  margin-top: 51%;
+  left: 0;
+}
+.commentInput input {
+  border: 1px solid #000;
+}
+.comments::-webkit-scrollbar {
+  display: none;
+}
+/* input[type='file'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+} */
+
+.profile-pic img {
+  height: 140%;
+  width: 140%;
+  object-fit: cover;
+  margin-top: 40px;
+}
+
+.profileImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.postForm {
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 20%;
+  z-index: 99;
+  opacity: 0;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .postForm {
+    position: absolute;
+    margin-top:25%;
+    margin-left: 0%;
+    left: 0;
+    z-index: 99;
+  }
+
+}
+

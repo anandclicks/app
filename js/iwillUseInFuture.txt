@@ -1,0 +1,42 @@
+  <!-- comments section  -->
+       <div id="commentSection" class="col-12 rounded-1 d-flex flex-column justify-content-between p-3 cardImge d-none">
+          <ul class="list-unstyled  p-2 border-3 overflow-scroll comments">
+          <p>Comments..</p>
+            <li class="m-0">
+              <p class="m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, atque.</p>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                  <button style="border: none;" class="likeBtn btn "><i class="ri-heart-line"></i> Like </button>
+                <button style="border: none;" class="dislikeBtn btn "><i class="ri-thumb-down-line"></i> Dislike </button>
+                </div>
+                <p class="m-2">15</p>
+              </div>
+            </li>
+            </ul>
+            <!-- Repeat the <li> structure for additional posts -->
+          <div class="commentInput d-flex gap-2">
+            <input class="form-control w-75 py-2" type="text" placeholder="Write a comment...."> <div class="btn mainBtn text-white px-5">Send</div>
+          </div>
+        </div>`
+
+
+        // js code for comments section script 
+const commentSectionOpenClose = ()=> {
+  const commentBtn = document.querySelector(".commentBtn")
+const commentSection = document.querySelector("#commentSection")
+
+try {
+  commentBtn.addEventListener("click",()=> {
+    if(commentSection.classList.contains("d-none")) {
+      commentSection.classList.remove("d-none")
+    }
+    else {
+      commentSection.classList.add("d-none")
+    }
+  })
+} catch (error) {
+  console.log(error)
+}
+
+}
+commentSectionOpenClose()
